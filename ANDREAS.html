@@ -1,160 +1,290 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/toplogo.png">
-    <title> Moodie Studio</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <link href="modules/slick/slick.css" rel="stylesheet">
-    <link href="modules/slick/slick-theme.css" rel="stylesheet">
-    <link href="modules/magnific-popup/magnific-popup.css" rel="stylesheet">
-    <link href="modules/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="modules/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="../../../../gtag/js?id=UA-144098545-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-144098545-1');
-    </script>
-    <style>
-        /* Styles for the PDF Viewer Container */
-        .pdf-viewer-container {
-            max-width: 900px; /* Max width of the viewer box */
-            margin: 40px auto; /* Centering the container with space above/below */
-            text-align: center;
-        }
-        .pdf-iframe-wrapper {
-            width: 100%; 
-            height: 75vh; /* 75% of the viewport height */
-            background-color: #ffffff; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
-            overflow: hidden; 
-            border: 1px solid #e5e7eb;
-        }
-        .pdf-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .pdf-caption {
-            text-align: center;
-            color: #6b7280;
-            margin-top: 1rem;
-            font-size: 0.875rem;
-        }
-    </style>
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Preloader -->
-    <div id="moodie-page-loading" class="moodie-pageloading">
-        <div class="moodie-pageloading-inner">
-            <img src="images/logo4.png" class="logo-img" alt="">
-        </div>
-    </div>
-    <!-- Sidebar Section -->
-    <a href="#" class="js-cmoodie-nav-toggle cmoodie-nav-toggle"><i></i></a>
-    <aside id="cmoodie-aside">
-        <!-- Logo -->
-        <div class="cmoodie-logo">
-            <a href="index.html"> 
-                <img src="images/logo4.png" class="logo-img" alt="">
-            </a>
-        </div>
-        
-        <!-- Menu -->
-        <nav class="cmoodie-main-menu">
-            <ul>
-                <li class="active"><a id ="Home" href='index.html#sectionhome'></a></li>
-                <li><a id ="About" href="index.html#section1"></a></li>
-                <li><a id ="Service" href='index.html#section2'></a></li>
-                <li><a id ="Project" href='index.html#section3'></a></li>
-                <li><a id ="Client" href='index.html#section4'></a></li>
-                <li><a id ="RSVP" class="hover-effect" style="border: 2px solid black; /* Solid black border */border-radius: 20px / 20px; /* Horizontal and vertical radii for oval shape */padding: 5px 10px; /* Padding inside the list item */" href='https://docs.google.com/forms/d/e/1FAIpQLSccvW7rv2OB4Cje2qp47-6HgN77qcI5XONA-BAmGUndzGmIJQ/viewform?usp=sf_link' target="_blank" ></a></li>
-                <li><a id ="Contact" style="padding-top:10px" href='index.html#section6'></a></li>
-                <div id="countdown">
-                    <div class="switch">
-                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                        <label for="language-toggle"></label>
-                        <span class="on">EN</span>
-                        <span class="off">ES</span>
-                    </div>
-                </div>
-            
-                <script src="script.js"></script>
-            </ul>
-        </nav>
-    </aside>
-    <!-- Main -->
-    <div id="fullScreenContainer" class="full-screen-container" style="display: none;"></div>
-    <div id="cmoodie-main">
-    <!--  Portfolio Page  -->
-    <div class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div> 
-                    <span>RESIDENTIAL INTERIOR DESIGN</span>
-                    <h2>The Andreas</h2> 
-                    <br>
-                    <div class="faqs-accordion">
-                        <div class="accordion">
-                            <div class="item">
-                                <div class="title">
-                                    <h6>CLICK FOR RENDERS</h6> 
-                                </div>
-                                <div class="accordion-info">
-                                    <div class="row">
-                                        <div class="col-md-4 gallery-item">
-                                            <a href="images/Projects/NAIL/1.png" title="IRVINE NAIL SALON - OPTION 1" class="img-zoom">
-                                                <div class="gallery-box">
-                                                    <div class="gallery-img"> <img src="images/Projects/NAIL/1.png" class="img-fluid mx-auto d-block" alt=""> </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-4 gallery-item">
-                                            <a href="images/Projects/NAIL/2.png" title="IRVINE NAIL SALON - OPTION 2" class="img-zoom">
-                                                <div class="gallery-box">
-                                                    <div class="gallery-img"> <img src="images/Projects/NAIL/2.png" class="img-fluid mx-auto d-block" alt=""> </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-4 gallery-item">
-                                            <a href="images/Projects/NAIL/3.png" title="IRVINE NAIL SALON - OPTION 3" class="img-zoom">
-                                                <div class="gallery-box">
-                                                    <div class="gallery-img"> <img src="images/Projects/NAIL/3.png" class="img-fluid mx-auto d-block" alt=""> </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-4 gallery-item">
-                                            <a href="images/Projects/NAIL/4.png" title="IRVINE NAIL SALON - OPTION 4" class="img-zoom">
-                                                <div class="gallery-box">
-                                                    <div class="gallery-img"> <img src="images/Projects/NAIL/4.png" class="img-fluid mx-auto d-block" alt=""> </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="textbulk"> <br>Collaborating with the Andres family has been a privilege. Their openness to thoughtful ideas, and the calm welcoming way they host every conversation guided each design choice. 
-                    <br><br>
-                    Their time in both Southern California and the Pacific Northwest shaped a style that feels bright yet grounded, so we echoed that mix with relaxed natural textures, soft coastal tones, and warm pockets of light.
-                    <br><br>
-                    Because music and casual gatherings sit at the heart of their routines, we shaped rooms that flow easily and feel comfortable at any scale, from everyday moments to larger celebrations.<br> <br>
-                    Working alongside trusted trades, we refined details discreetly so the family’s spirit could remain the focus. Seeing the spaces support their life so naturally is a gentle reminder of why I value this work. 
-                    </p>
+﻿<!DOCTYPE html>
 
-                    <!-- === START: PDF VIEWER SECTION === -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/toplogo.png">
+
+    <title>  Moodie Studio</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+
+    <link href="css/themify-icons.css" rel="stylesheet">
+
+    <link href="modules/slick/slick.css" rel="stylesheet">
+
+    <link href="modules/slick/slick-theme.css" rel="stylesheet">
+
+    <link href="modules/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <link href="modules/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="modules/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async="" src="../../../../gtag/js?id=UA-144098545-1"></script>
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+
+            dataLayer.push(arguments);
+
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144098545-1');
+
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- Preloader -->
+
+    <div id="moodie-page-loading" class="moodie-pageloading">
+
+        
+
+        <div class="moodie-pageloading-inner">
+
+          <img src="images/logo4.png" class="logo-img" alt="">
+
+        </div>
+
+    </div>
+
+    <!-- Sidebar Section -->
+
+    <a href="#" class="js-cmoodie-nav-toggle cmoodie-nav-toggle"><i></i></a>
+
+    <aside id="cmoodie-aside">
+
+        <!-- Logo -->
+
+        <div class="cmoodie-logo">
+
+            <a href="index.html"> 
+
+                <img src="images/logo4.png" class="logo-img" alt="">
+
+            </a>
+
+        </div>
+
+         
+
+        <!-- Menu -->
+
+      <nav class="cmoodie-main-menu">
+
+            <ul>
+
+                <li class="active"><a id ="Home" href='index.html#sectionhome'></a></li>
+
+                <li><a id ="About" href="index.html#section1"></a></li>
+
+                <li><a id ="Service" href='index.html#section2'></a></li>
+
+                <li><a id ="Project" href='index.html#section3'></a></li>
+
+                <!-- Dropdown menu example 
+
+                <li class="cmoodie-sub"><a href="#0">Pages</a>
+
+                    <ul>
+
+                        <li><a href="portfolio-page.html">Portfolio Page</a></li>
+
+                        <li><a href="post.html">Post Page</a></li>
+
+                    </ul>
+
+                </li> 
+
+                -->
+
+                <li><a id ="Client" href='index.html#section4'></a></li>
+
+                <li><a id ="RSVP" class="hover-effect" style="border: 2px solid black; /* Solid black border */border-radius: 20px / 20px; /* Horizontal and vertical radii for oval shape */padding: 5px 10px; /* Padding inside the list item */" href='https://docs.google.com/forms/d/e/1FAIpQLSccvW7rv2OB4Cje2qp47-6HgN77qcI5XONA-BAmGUndzGmIJQ/viewform?usp=sf_link' target="_blank" ></a></li>
+
+             <li><a id ="Contact" style="padding-top:10px" href='index.html#section6'></a></li>
+
+                <div id="countdown">
+
+                      <div class="switch">
+
+  <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+
+  <label for="language-toggle"></label>
+
+  <span class="on">EN</span>
+
+  <span class="off">ES</span>
+
+</div>
+
+</div>
+
+             
+
+        <script src="script.js"></script>
+
+            </ul>
+
+        </nav>
+
+        <!-- Sidebar Footer -->
+
+       
+
+    </aside>
+
+    <!-- Main -->
+
+        <div id="fullScreenContainer" class="full-screen-container" style="display: none;"></div>
+
+    <div id="cmoodie-main">
+
+    <!--  Portfolio Page  -->
+
+    <div class="section-padding">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div> 
+
+                    <span>RESIDENTIAL INTERIOR DESIGN</span>
+
+                    <h2>The Andreas</h2> 
+
+                    <br>
+
+                       <div class="faqs-accordion">
+
+                    <div class="accordion">
+
+                                <div class="item">
+
+                                    <div class="title">
+
+                                        <h6>CLICK FOR RENDERS</h6> </div>
+
+<div class="accordion-info">
+
+                                        <div class="row">
+
+               <div class="col-md-4 gallery-item">
+
+                    <a href="images/Projects/NAIL/1.png" title="IRVINE NAIL SALON - OPTION 1" class="img-zoom">
+
+                        <div class="gallery-box">
+
+                            <div class="gallery-img"> <img src="images/Projects/NAIL/1.png" class="img-fluid mx-auto d-block" alt=""> </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-md-4 gallery-item">
+
+                    <a href="images/Projects/NAIL/2.png" title="IRVINE NAIL SALON - OPTION 2" class="img-zoom">
+
+                        <div class="gallery-box">
+
+                            <div class="gallery-img"> <img src="images/Projects/NAIL/2.png" class="img-fluid mx-auto d-block" alt=""> </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-md-4 gallery-item">
+
+                    <a href="images/Projects/NAIL/3.png" title="IRVINE NAIL SALON - OPTION 3" class="img-zoom">
+
+                        <div class="gallery-box">
+
+                            <div class="gallery-img"> <img src="images/Projects/NAIL/3.png" class="img-fluid mx-auto d-block" alt=""> </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                                             <div class="col-md-4 gallery-item">
+
+                    <a href="images/Projects/NAIL/4.png" title="IRVINE NAIL SALON - OPTION 4" class="img-zoom">
+
+                        <div class="gallery-box">
+
+                            <div class="gallery-img"> <img src="images/Projects/NAIL/4.png" class="img-fluid mx-auto d-block" alt=""> </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+                                    </div>
+
+                                                            
+
+
+
+                                </div>
+
+                                
+
+                      </div>
+
+                           
+
+                    <p class="textbulk"> <br>Collaborating with the Andres family has been a privilege. Their openness to thoughtful ideas, and the calm welcoming way they host every conversation guided each design choice. 
+
+ <br><br>
+
+
+
+Their time in both Southern California and the Pacific Northwest shaped a style that feels bright yet grounded, so we echoed that mix with relaxed natural textures, soft coastal tones, and warm pockets of light.
+
+<br><br>
+
+            
+
+Because music and casual gatherings sit at the heart of their routines, we shaped rooms that flow easily and feel comfortable at any scale, from everyday moments to larger celebrations.<br> <br>
+
+
+
+Working alongside trusted trades, we refined details discreetly so the family’s spirit could remain the focus. Seeing the spaces support their life so naturally is a gentle reminder of why I value this work. 
+
+</p>
+
+                             <!-- === START: PDF VIEWER SECTION === -->
                     <div class="pdf-viewer-container">
                         <div class="pdf-iframe-wrapper">
                             <iframe 
@@ -168,137 +298,266 @@
                         </p>
                     </div>
                     <!-- === END: PDF VIEWER SECTION === -->
+            </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+        </div>
 
-    <!-- Footer -->
-    <footer class="footer-section">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 offset-md-1" id="section6">
-                        <div class="left-cont">
-                            <h3>CONTACT US</h3>
-                            <hr class="line mb-30">
-                            <ul>
-                                <li><a>Phone/Whatsapp:<br><a href="tel:+19498788911">+1 949-878-8911</a></a></li>
-                                <li><a>Email:<br><a href="mailto:evelyn@themoodiestudio.com">evelyn@themoodiestudio.com</a></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="center-cont">
-                            <h2>MOODIE STUDIO<span>Brighten Your Mood</span></h2>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="right-cont">
-                            <h3>CONNECT WITH US</h3>
-                            <hr class="line mb-30">
-                            <ul>
-                                <li><a href="https://www.instagram.com/themoodiestudio" target="_blank" >Instagram</a></li>
-                                <li><a href="mailto:evelyn@themoodiestudio.com">Send us a email</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p><small>&copy;EVELYNMARTINEZDESIGN</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-        
-    <!-- toTop -->
-    <a href="index.html#" class="totop">TOP</a>
-    </div>
+            </div>
 
-    <!-- Js -->
-    <script src="js/plugins/jquery-3.3.1.min.js"></script>
-    <script src="js/plugins/bootstrap.min.js"></script>
-    <script src="js/plugins/imagesloaded.pkgd.min.js"></script>
-    <script src="js/plugins/jquery.isotope.v3.0.2.js"></script>
-    <script src="js/plugins/modernizr-2.6.2.min.js"></script>
-    <script src="js/plugins/jquery.waypoints.min.js"></script>
-    <script src="modules/owl-carousel/owl.carousel.min.js"></script>
-    <script src="modules/slick/slick.js"></script>
-    <script src="modules/magnific-popup/jquery.magnific-popup.js"></script>
-    <script src="modules/masonry/masonry.pkgd.min.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        // Function to switch the language of the web page
-        function changeLanguage(lang) {
-            let element1 = document.getElementById("Home");
-            if (lang === "en") {
-                element1.innerHTML = "HOME";
-            } else if (lang === "es") {
-                element1.innerHTML = "HOGAR";
-            }
+        </div>
 
-            let element2 = document.getElementById("About");
-            if (lang === "en") {
-                element2.innerHTML = "ABOUT";
-            } else if (lang === "es") {
-                element2.innerHTML = "ACERCA DE";
-            }
+        </div>
 
-            let element3 = document.getElementById("Service");
-            if (lang === "en") {
-                element3.innerHTML = "OUR SERVICES";
-            } else if (lang === "es") {
-                element3.innerHTML = "NUESTROS SERVICIOS";
-            }
+    <!-- Footer -->
 
-            let element4 = document.getElementById("Project");
-            if (lang === "en") {
-                element4.innerHTML = "RECENT PROJECTS";
-            } else if (lang === "es") {
-                element4.innerHTML = "PROYECTOS RECIENTES";
-            }
+      <footer class="footer-section">
 
-            let element5 = document.getElementById("Client");
-            if (lang === "en") {
-                element5.innerHTML = "OUR CLIENTELE";
-            } else if (lang === "es") {
-                element5.innerHTML = "NUESTRA CLIENTELA";
-            }
+        <div class="footer-top">
 
-            let element6 = document.getElementById("RSVP");
-            if (lang === "en") {
-                element6.innerHTML = "FREE CONSULTATION";
-            } else if (lang === "es") {
-                element6.innerHTML = "PROGRAMAR UNA CONSULTA";
-            }
+            <div class="container">
 
-            let element7 = document.getElementById("Contact");
-            if (lang === "en") {
-                element7.innerHTML = "CONTACT US";
-            } else if (lang === "es") {
-                element7.innerHTML = "CONTÁCTANOS";
-            }
-        }
-        // Event listener for the language toggle switch
-        document.getElementById('language-toggle').addEventListener('change', function() {
-            if (this.checked) {
-                changeLanguage('es');
-            } else {
-                changeLanguage('en');
-            }
-        });
+                <div class="row">
 
-        // Initialize the content in default language
-        changeLanguage('en');
-    </script>
-    
-</body>
+                    <div class="col-md-3 offset-md-1" id="section6">
+
+                        <div class="left-cont">
+
+                            <h3>CONTACT US</h3>
+
+                            <hr class="line mb-30">
+
+                            <ul>
+
+                                <li><a>Phone/Whatsapp:<br><a href="tel:+19498788911">+1 949-878-8911</a></a></li>
+
+                                <li><a>Email:<br><a href="mailto:evelyn@themoodiestudio.com">evelyn@themoodiestudio.com</a></a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 text-center">
+
+                        <div class="center-cont">
+
+                            <h2>MOODIE STUDIO<span>Brighten Your Mood</span></h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="right-cont">
+
+                            <h3>CONNECT WITH US</h3>
+
+                            <hr class="line mb-30">
+
+                            <ul>
+
+                                <li><a href="https://www.instagram.com/themoodiestudio" target="_blank" >Instagram</a></li>
+
+                                <li><a href="mailto:evelyn@themoodiestudio.com">Send us a email</a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <p><small>&copy;EVELYNMARTINEZDESIGN</small></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+        
+
+    <!-- toTop -->
+
+    <a href="index.html#" class="totop">TOP</a>
+
+    </div>
+
+
+
+    <!-- Js -->
+
+    <script src="js/plugins/jquery-3.3.1.min.js"></script>
+
+    <script src="js/plugins/bootstrap.min.js"></script>
+
+    <script src="js/plugins/imagesloaded.pkgd.min.js"></script>
+
+    <script src="js/plugins/jquery.isotope.v3.0.2.js"></script>
+
+    <script src="js/plugins/modernizr-2.6.2.min.js"></script>
+
+    <script src="js/plugins/jquery.waypoints.min.js"></script>
+
+    <script src="modules/owl-carousel/owl.carousel.min.js"></script>
+
+    <script src="modules/slick/slick.js"></script>
+
+    <script src="modules/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <script src="modules/masonry/masonry.pkgd.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+      <script>
+
+  // Function to switch the language of the web page
+
+function changeLanguage(lang) {
+
+  let element1 = document.getElementById("Home");
+
+  if (lang === "en") {
+
+    element1.innerHTML = "HOME";
+
+  } else if (lang === "es") {
+
+    element1.innerHTML = "HOGAR";
+
+  }
+
+
+
+  let element2 = document.getElementById("About");
+
+  if (lang === "en") {
+
+    element2.innerHTML = "ABOUT";
+
+  } else if (lang === "es") {
+
+  element2.innerHTML = "ACERCA DE";
+
+  }
+
+
+
+  let element3 = document.getElementById("Service");
+
+  if (lang === "en") {
+
+    element3.innerHTML = "OUR SERVICES";
+
+  } else if (lang === "es") {
+
+    element3.innerHTML = "NUESTROS SERVICIOS";
+
+  }
+
+
+
+  let element4 = document.getElementById("Project");
+
+  if (lang === "en") {
+
+    element4.innerHTML = "RECENT PROJECTS";
+
+  } else if (lang === "es") {
+
+    element4.innerHTML = "PROYECTOS RECIENTES";
+
+  }
+
+
+
+  let element5 = document.getElementById("Client");
+
+  if (lang === "en") {
+
+    element5.innerHTML = "OUR CLIENTELE";
+
+  } else if (lang === "es") {
+
+    element5.innerHTML = "NUESTRA CLIENTELA";
+
+  }
+
+
+
+  let element6 = document.getElementById("RSVP");
+
+  if (lang === "en") {
+
+    element6.innerHTML = "FREE CONSULTATION";
+
+  } else if (lang === "es") {
+
+    element6.innerHTML = "PROGRAMAR UNA CONSULTA";
+
+  }
+
+
+
+  let element7 = document.getElementById("Contact");
+
+  if (lang === "en") {
+
+    element7.innerHTML = "CONTACT US";
+
+  } else if (lang === "es") {
+
+    element7.innerHTML = "CONTÁCTANOS";
+
+  }
+
+}
+
+            // Event listener for the language toggle switch
+
+  document.getElementById('language-toggle').addEventListener('change', function() {
+
+    if (this.checked) {
+
+      changeLanguage('es');
+
+    } else {
+
+      changeLanguage('en');
+
+    }
+
+  });
+
+
+
+  // Initialize the content in default language
+
+  changeLanguage('en');
+
+    </script>
+
+    
+
+    </body>
+
 </html>
