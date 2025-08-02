@@ -25,6 +25,34 @@
         gtag('js', new Date());
         gtag('config', 'UA-144098545-1');
     </script>
+    <style>
+        /* Styles for the PDF Viewer Container */
+        .pdf-viewer-container {
+            max-width: 900px; /* Max width of the viewer box */
+            margin: 40px auto; /* Centering the container with space above/below */
+            text-align: center;
+        }
+        .pdf-iframe-wrapper {
+            width: 100%; 
+            height: 75vh; /* 75% of the viewport height */
+            background-color: #ffffff; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+            overflow: hidden; 
+            border: 1px solid #e5e7eb;
+        }
+        .pdf-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .pdf-caption {
+            text-align: center;
+            color: #6b7280;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Preloader -->
